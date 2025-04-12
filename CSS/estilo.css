@@ -228,13 +228,6 @@ footer p {
     text-align: left;
   }
 
-  .carousel1, .carousel2 {
-    max-width: 100%;
-  }
-
-  .carousel1-images img, .carousel2-images img {
-    object-fit: cover;
-  }
 
   .imagens-lado-a-lado {
     flex-direction: column;
@@ -252,7 +245,4 @@ footer p {
     flex-direction: row;
   }
 
-  .carousel1, .carousel2 {
-    max-width: 80%;
-  }
 }
