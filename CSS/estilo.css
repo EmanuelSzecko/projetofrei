@@ -1,0 +1,279 @@
+/* Estilo Geral */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5; /* Cinza claro para um visual moderno */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+  
+}
+
+/* Estilo do Cabeçalho */
+header {
+  background: linear-gradient(135deg, #004d40, #388e3c); /* Gradiente verde escuro ao médio */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: 5px solid #00251a;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilo da Navegação */
+nav {
+  background-color: #2e7d32; /* Verde médio */
+  padding: 12px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #cddc39; /* Verde limão */
+}
+
+/* Estilo Principal */
+main {
+  padding: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: left;
+}
+
+main h2 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  color: #1b5e20;
+  border-left: 5px solid #388e3c;
+  padding-left: 10px;
+}
+
+/* Estilo dos Parágrafos */
+p {
+  max-width: 750px; 
+  margin: 15px auto;
+  line-height: 1.8;
+  font-size: 1.1em;
+  font-family: 'Georgia', serif;
+  text-align: justify;
+  color: #444;
+}
+p1 {
+  max-width: 750px; 
+  margin: 15px auto;
+  line-height: 1.8;
+  font-size: 1.1em;
+  font-family: 'Georgia', serif;
+  text-align: justify;
+  color: #ffffff;
+}
+
+/* Estilo do Painel Flutuante */
+#floatingPanel {
+  margin: 20px 0;
+}
+
+#floatingPanel a {
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+#floatingPanel a:hover {
+  color: #cddc39;
+}
+
+/* Estilo das Listas */
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list ul li {
+  background-color: #e0e0e0;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list ul li button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-list ul li button:hover {
+  background-color: #00251a;
+}
+
+
+
+/* Estilo do Rodapé Fixo */
+footer {
+  
+  
+  width: 100%;
+  background: linear-gradient(135deg, #004d40, #1b5e20);
+  color: white;
+  padding: 20px 0;
+  text-align: center; /* Garante que o conteúdo do footer esteja centralizado */
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do conteúdo dentro do footer, garantindo que o parágrafo esteja centralizado */
+footer p {
+  text-align: center; /* Garante que o texto dentro do parágrafo esteja centralizado */
+  margin: 0;
+  padding: 0;
+  
+}
+
+iframe {
+  margin-bottom: 30px;
+}
+
+.carousel1 {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.carousel1-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel1-images img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.carousel1-prev, .carousel1-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2em;
+  z-index: 10;
+}
+.carousel1-prev {
+  left: 10px;
+}
+.carousel1-next {
+  right: 10px;
+}
+
+.carousel2 {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+.carousel2-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel2-images img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+.carousel2-prev, .carousel2-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 10;
+}
+.carousel2-prev {
+  left: 10px;
+}
+.carousel2-next {
+  right: 10px;
+}
+
+      .imagens-lado-a-lado {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Espaço entre as imagens */
+        margin: 20px 0;
+        flex-wrap: wrap; /* Para se adaptar em telas menores */
+    }
+    
+    .imagens-lado-a-lado img {
+        max-width: 300px; /* Tamanho máximo da imagem */
+        width: 100%; /* Faz com que se adapte sem estourar */
+        height: auto; /* Mantém a proporção e qualidade */
+        border-radius: 8px; /* Opcional: cantos arredondados */
+        box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Opcional: sombrazinha leve */
+    }
+    .perfil-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      vertical-align: middle;
+      margin-right: 15px;
+      border: 3px solid #999;
+  }
