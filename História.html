@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>História do Colégio Frei Nicodemos</title>
+    <link rel="stylesheet" href="CSS/estilo.css">       
+</head>
+<body>
+
+    <h1>História do Colégio Frei Nicodemos</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="Professores.html">Professores </a></li>
+            <li><a href="Gestores.html">Gestores</a></li>
+            <li><a href="Funcionários.html">Funcionários</a></li>
+            <li><a href="Associação.html">Associação</a></li>
+            <li><a href="Conselho.html">Conselho</a></li>
+            <li><a href="Notícias_Escola.html">Notícias</a></li>
+            
+            <li><a href="paginaTopicos.html">Tópicos</a></li>
+        </ul>
+    </nav>
+    <div class="aluno">
+        <p>O Colégio Frei Nicodemos é uma instituição educacional reconhecida por sua excelência no ensino e seu compromisso com a formação acadêmica e ética de seus alunos. Fundado com o propósito de oferecer uma educação de qualidade, o colégio tem desempenhado um papel fundamental na comunidade, ajudando a moldar gerações de estudantes.</p>
+
+        <p>A história do Colégio Frei Nicodemos remonta a sua fundação, quando um grupo de educadores e religiosos dedicados decidiu criar um ambiente de ensino baseado em valores sólidos e na busca pelo conhecimento. Desde então, a instituição tem se destacado pelo seu compromisso com a inovação e pela adaptação às novas metodologias educacionais, sempre buscando oferecer o melhor aprendizado possível.</p>
+    </div>
+    <!-- Imagem ilustrativa sobre o colégio -->
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1743124712419!6m8!1m7!1smXXz2kyoT2wQPY1n-C3a_w!2m2!1d-27.81012822334783!2d-50.34526789149201!3f150.03988708873717!4f9.79026166621017!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Imagem do Colégio Frei Nicodemos</iframe>
+
+    <img src="imagens/S5034107.JPG">
+
+    <!-- Carrossel 1 -->
+<div class="carousel1">
+    <div class="carousel1-images">
+        <img src="imagens/S5034107.JPG" alt="Imagem 0">
+        <img src="imagens/S5034108.JPG" alt="Imagem 1">
+        <img src="imagens/S5034957.JPG" alt="Imagem 2">
+        <img src="imagens/S5034959.JPG" alt="Imagem 3">
+        <img src="imagens/S5034962.JPG" alt="Imagem 4">
+    </div>
+    <button class="carousel1-prev">&#10094;</button>
+    <button class="carousel1-next">&#10095;</button>
+</div>
+
+    <div class="aluno">
+        <p>Ao longo dos anos, o colégio ampliou suas instalações e investiu em infraestrutura moderna para proporcionar um ambiente adequado ao desenvolvimento educacional e pessoal dos alunos. Além do ensino tradicional, a instituição promove atividades extracurriculares, eventos culturais e esportivos, contribuindo para uma formação completa.</p>
+
+        <p>Hoje, o Colégio Frei Nicodemos é uma referência na educação, reconhecido pelo seu corpo docente qualificado e pela sua missão de formar cidadãos críticos, responsáveis e preparados para os desafios do futuro. Seu legado continua a crescer, mantendo viva a tradição de ensino com dedicação e excelência.</p>
+    </div>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p1>&copy; Colégio Frei Nicodemos. Todos os Direitos Reservados.</p1>
+        </div>
+    </footer>
+
+    <script>
+        let index1 = 0;
+        const images1 = document.querySelectorAll('.carousel1-images img');
+        const prev1 = document.querySelector('.carousel1-prev');
+        const next1 = document.querySelector('.carousel1-next');
+        
+        function updateCarousel1() {
+            const width = document.querySelector('.carousel1').offsetWidth;
+            document.querySelector('.carousel1-images').style.transform = `translateX(${-index1 * width}px)`;
+        }
+        
+        prev1.addEventListener('click', () => {
+            index1 = (index1 > 0) ? index1 - 1 : images1.length - 1;
+            updateCarousel1();
+        });
+        next1.addEventListener('click', () => {
+            index1 = (index1 < images1.length - 1) ? index1 + 1 : 0;
+            updateCarousel1();
+        });
+        </script>
+    
+</body>
+</html>

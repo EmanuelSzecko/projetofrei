@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <h1>E.E.B Frei Nicodemos - conheça um pouco nós</h1>
+
+    <nav>
+        <ul>
+            <li><a href="História.html">História </a></li>
+            <li><a href="Professores.html">Professores </a></li>
+            <li><a href="Gestores.html">Gestores</a></li>
+            <li><a href="Funcionários.html">Funcionários</a></li>
+            <li><a href="Associação.html">Associação</a></li>
+            <li><a href="Conselho.html">Conselho</a></li>
+            <li><a href="Notícias_Escola.html">Notícias</a></li>
+            <li><a href="paginaTopicos.html">Tópicos</a></li>
+        </ul>
+    </nav>
+
+    <div class="aluno">
+        <p>
+            <b>Acesso a todos os alunos! </b>
+                <br>    A E.E.B Frei Nicodemos, localizada em Lages (SC), no bairro Petrópolis, oferece ensino presencial nos períodos diurno e noturno, atendendo Ensino Fundamental – Anos Iniciais e Finais e Ensino Médio. Como escola pública estadual, prioriza uma educação inclusiva e acessível, garantindo oportunidades para todos os alunos. </p>
+        
+    
+
+
+
+
+
+
+
+
+
+        <!-- Carrossel 2 -->
+<div class="carousel2">
+    <div class="carousel2-images">
+        <img src="imagens/WhatsApp Image 2025-04-11 at 09.01.01.jpeg" alt="Vertical">
+        <img src="imagens/888.jpg" alt="Horizontal">
+        <img src="imagens/9999.jpg" alt="Vertical">
+        <img src="imagens/WhatsApp Image 2025-04-11 at 09.01.14.jpeg" alt="Vertical">
+    </div>
+    <button class="carousel2-prev">&#10094;</button>
+    <button class="carousel2-next">&#10095;</button>
+</div>
+<script>
+    let index2 = 0;
+    const images2 = document.querySelectorAll('.carousel2-images img');
+    const prev2 = document.querySelector('.carousel2-prev');
+    const next2 = document.querySelector('.carousel2-next');
+    
+    function updateCarousel2() {
+        const width = document.querySelector('.carousel2').offsetWidth;
+        document.querySelector('.carousel2-images').style.transform = `translateX(${-index2 * width}px)`;
+    }
+    
+    prev2.addEventListener('click', () => {
+        index2 = (index2 > 0) ? index2 - 1 : images2.length - 1;
+        updateCarousel2();
+    });
+    next2.addEventListener('click', () => {
+        index2 = (index2 < images2.length - 1) ? index2 + 1 : 0;
+        updateCarousel2();
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p>
+            Suas  instalações são adaptadas para acessibilidade, com corrimãos, rampas, portas amplas e banheiros adaptados. Além disso, conta com biblioteca, quadra esportiva coberta, laboratório de informática com acesso à Internet, lousa digital, materiais didáticos variados, instrumentos musicais, acervo multimídia, sistema de som, além de recursos culturais, esportivos e recreativos.
+        </p>
+
+        <p>
+            A escola também dispõe de profissionais qualificados em diversas áreas, incluindo supervisão pedagógica e segurança alimentar, criando um ambiente educacional completo e sustentável para o desenvolvimento dos estudantes.
+        </p>
+        <p>
+            Que esta página te ajude a explorar esse universo fascinante! Esperamos que as informações aqui apresentadas façam a diferença no teu conhecimento e contribuam para o crescimento da tua empresa.
+        </p>
+    </div>
+    
+
+    <h2>Comece por aqui:</h2>
+    <div id="floatingPanel">
+    <il>
+        <a href="https://www.google.com" target="_blank">Google</a> |
+        <a href="https://www.youtube.com" target="_blank">YouTube</a> |
+        <a href="https://www.github.com" target="_blank">GitHub</a>  |
+        <a href="https://www.instagram.com/e.e.b.freinicodemos/" target="_blank">Instragram</a>
+    </il>
+</div>
+
+    <footer>
+        
+        <div class="footer-content">
+            <p1>&copy; Colégio Frei Nicodemos. Todos os Direitos Reservados.</p1>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>
