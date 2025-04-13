@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto de Geologia - CAVE Lages</title>
+  <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Projeto de Geologia</h1>
+  </header>
+
+  <nav>
+    <ul>
+
+        <li><a href="index.html">Projeto</a></li>
+        <li><a href="História.html">História </a></li>
+        <li><a href="Professores.html">Professores </a></li>
+        <li><a href="Gestores.html">Gestores</a></li>
+        <li><a href="Funcionários.html">Funcionários</a></li>
+        <li><a href="Associação.html">Associação</a></li>
+        <li><a href="Conselho.html">Conselho</a></li>
+        <li><a href="Notícias_Escola.html">Notícias</a></li>
+        <li><a href="paginaTopicos.html">Tópicos</a></li>
+        
+    </ul>
+</nav>
+
+  <main>
+    <h2>Explorando a Geologia com Prática</h2>
+    <p>
+      Nossa turma está participando de um projeto incrível no CAVE de Lages, onde podemos aprender sobre geologia de forma prática e divertida! 
+      Com diversas atividades em campo e oficinas, conseguimos entender na prática como funcionam as camadas da Terra, os tipos de rochas e muitos outros conceitos que às vezes na sala de aula teórica ficam difíceis de visualizar.
+    </p>
+
+    <div class="carousel1">
+        <div class="carousel1-images">
+            <img src="imagens/489365896_1205599604436323_9220787391297991276_n.jpg" alt="Imagem 0">
+            <img src="imagens/490091380_1010503767311177_5059502670241065718_n.jpg" alt="Imagem 1">
+            <img src="imagens/490980273_1001907148704795_8009088183539867796_n.jpg" alt="Imagem 2">
+            <img src="imagens/490987357_994424425712004_5441288592700715445_n.jpg" alt="Imagem 3">
+            <img src="imagens/4e91217e-92c6-4805-88f1-ee76fb223f6a.jpg" alt="Imagem 4">
+            <img src="imagens/609477f5-c40d-439f-ae7c-b3c0be3078b4.jpg" alt="Imagem 4">
+            <img src="imagens/f8809692-abb1-4ed6-b66b-ec38ba53eae5.jpg" alt="Imagem 4">
+        </div>
+        <button class="carousel1-prev">&#10094;</button>
+        <button class="carousel1-next">&#10095;</button>
+    </div>
+
+    <h2>Nosso Professor de Geografia</h2>
+    <div class="aluno">
+      
+        <h2>
+            <img src="imagens/Captura de tela 2025-04-12 212737.png" alt="Foto de Emanuel" class="perfil-img">
+            Rafael Tizatto – O Professor Principal
+        </h2>
+        <p>Queria falar um pouco sobre o nosso professor de Geografia, o professor Rafael Tizatto, que é simplesmente incrível. Ele é muito competente e sempre demonstra que sabe muito bem o que está ensinando. Mas o que mais chama atenção é o quanto ele é confiável e dedicado aos alunos.
+
+Ele está sempre disposto a nos apoiar, tanto nas dúvidas das aulas quanto nas dificuldades do dia a dia. Além disso, ele não gosta de aulas paradas — ele sempre busca tornar tudo mais interessante e divertido. Muitas vezes ele traz jogos para a sala de aula, o que deixa o conteúdo bem mais fácil de entender e memorizar. Também gostamos bastante quando ele propõe atividades práticas, porque aprendemos de um jeito diferente e mais legal.
+
+Dá pra ver que ele realmente ama ensinar. Ele está sempre procurando novas formas de deixar as aulas mais criativas e envolventes. Isso faz toda a diferença no nosso aprendizado. Ter um professor assim faz com que a gente tenha mais vontade de aprender e participar.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <p1>&copy; Colégio Frei Nicodemos. Todos os Direitos Reservados.</p1>
+    </div>
+  </footer>
+
+  <script>
+    let index1 = 0;
+    const images1 = document.querySelectorAll('.carousel1-images img');
+    const prev1 = document.querySelector('.carousel1-prev');
+    const next1 = document.querySelector('.carousel1-next');
+    
+    function updateCarousel1() {
+        const width = document.querySelector('.carousel1').offsetWidth;
+        document.querySelector('.carousel1-images').style.transform = `translateX(${-index1 * width}px)`;
+    }
+    
+    prev1.addEventListener('click', () => {
+        index1 = (index1 > 0) ? index1 - 1 : images1.length - 1;
+        updateCarousel1();
+    });
+    next1.addEventListener('click', () => {
+        index1 = (index1 < images1.length - 1) ? index1 + 1 : 0;
+        updateCarousel1();
+    });
+    </script>
+</body>
+</html>
