@@ -298,3 +298,42 @@ iframe {
 .carousel4-prev:hover, .carousel4-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
+.carousel5 {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 3px solid #555;
+  border-radius: 10px;
+}
+
+.carousel5-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel5-images img {
+  height: 300px;
+  width: auto;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.carousel5-prev, .carousel5-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+.carousel5-prev { left: 10px; }
+.carousel5-next { right: 10px; }
