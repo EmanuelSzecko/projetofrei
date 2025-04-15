@@ -68,26 +68,6 @@ Dá pra ver que ele realmente ama ensinar. Ele está sempre procurando novas for
         <p1>&copy; Colégio Frei Nicodemos. Todos os Direitos Reservados.</p1>
     </div>
   </footer>
-
-  <script>
-    let index1 = 0;
-    const images1 = document.querySelectorAll('.carousel1-images img');
-    const prev1 = document.querySelector('.carousel1-prev');
-    const next1 = document.querySelector('.carousel1-next');
-    
-    function updateCarousel1() {
-        const width = document.querySelector('.carousel1').offsetWidth;
-        document.querySelector('.carousel1-images').style.transform = `translateX(${-index1 * width}px)`;
-    }
-    
-    prev1.addEventListener('click', () => {
-        index1 = (index1 > 0) ? index1 - 1 : images1.length - 1;
-        updateCarousel1();
-    });
-    next1.addEventListener('click', () => {
-        index1 = (index1 < images1.length - 1) ? index1 + 1 : 0;
-        updateCarousel1();
-    });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

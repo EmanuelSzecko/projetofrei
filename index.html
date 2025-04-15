@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-    <h1>E.E.B Frei Nicodemos - conheça um pouco nós</h1>
+    <h1>Frei Nicodemos - conheça um pouco nós</h1>
     </header>
 
     <nav>
@@ -40,27 +40,6 @@
     <button class="carousel2-prev">&#10094;</button>
     <button class="carousel2-next">&#10095;</button>
 </div>
-<script>
-    let index2 = 0;
-    const images2 = document.querySelectorAll('.carousel2-images img');
-    const prev2 = document.querySelector('.carousel2-prev');
-    const next2 = document.querySelector('.carousel2-next');
-    
-    function updateCarousel2() {
-        const width = document.querySelector('.carousel2').offsetWidth;
-        document.querySelector('.carousel2-images').style.transform = `translateX(${-index2 * width}px)`;
-    }
-    
-    prev2.addEventListener('click', () => {
-        index2 = (index2 > 0) ? index2 - 1 : images2.length - 1;
-        updateCarousel2();
-    });
-    next2.addEventListener('click', () => {
-        index2 = (index2 < images2.length - 1) ? index2 + 1 : 0;
-        updateCarousel2();
-    });
-    </script>
-
         <p>
             Suas  instalações são adaptadas para acessibilidade, com corrimãos, rampas, portas amplas e banheiros adaptados. Além disso, conta com biblioteca, quadra esportiva coberta, laboratório de informática com acesso à Internet, lousa digital, materiais didáticos variados, instrumentos musicais, acervo multimídia, sistema de som, além de recursos culturais, esportivos e recreativos.
         </p>
@@ -91,6 +70,6 @@
         </div>
     
     </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
