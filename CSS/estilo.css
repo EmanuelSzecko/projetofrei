@@ -202,14 +202,15 @@ iframe {
 .carousel1,
 .carousel2,
 .carousel3,
-.carousel4 {
+.carousel4,
+.carousel5 {
   position: relative;
   overflow: hidden;
   margin: 30px auto;
   border-radius: 8px;
 }
 
-.carousel3, .carousel4 {
+.carousel3, .carousel4, .carousel5 {
   max-width: 800px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -228,7 +229,8 @@ iframe {
 .carousel1-images,
 .carousel2-images,
 .carousel3-images,
-.carousel4-images {
+.carousel4-images,
+.carousel5-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -236,36 +238,48 @@ iframe {
 .carousel1-images img,
 .carousel2-images img,
 .carousel3-images img,
-.carousel4-images img {
+.carousel4-images img,
+.carousel5-images img {
   width: 100%;
   flex-shrink: 0;
   border-radius: 8px;
 }
 
+/* Ajustando as imagens para o carrossel */
 .carousel3-images img,
 .carousel4-images img {
   height: 450px;
-  object-fit: cover;
+  object-fit: cover; /* Aqui as imagens do carrossel 3 e 4 são ajustadas para cobrir o espaço */
 }
 
+.carousel5-images img {
+  max-height: 500px;
+  object-fit: contain; /* A altura máxima das imagens no carrossel 5 é limitada e as imagens se ajustam ao container */
+}
+
+/* Ajustando a exibição das imagens no carrossel 2 */
 .carousel2-images img {
   height: 300px;
-  object-fit: cover;
+  object-fit: cover; /* O ajuste da altura e a cobertura da área permanecem para o carrossel 2 */
 }
 
+/* Ajuste especial para a imagem do carrossel 1 */
 .carousel1-images img {
-  object-fit: contain;
-  max-width: 600px;
+  object-fit: contain; /* Imagem no carrossel 1 será ajustada de forma que toda a imagem apareça */
+  max-width: 600px; /* Imagem do carrossel 1 tem um limite de largura */
 }
 
+/* Ajustando imagens no carrossel 2 */
 .carousel2-images img {
-  max-width: 400px;
+  max-width: 400px; /* Carrossel 2 terá imagens com uma largura máxima */
 }
 
+/* Botões de navegação do carrossel */
 .carousel1-prev, .carousel1-next,
 .carousel2-prev, .carousel2-next,
 .carousel3-prev, .carousel3-next,
-.carousel4-prev, .carousel4-next {
+.carousel4-prev, .carousel4-next,
+.carousel5-prev, .carousel5-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -281,59 +295,84 @@ iframe {
 }
 
 .carousel3-prev, .carousel3-next,
-.carousel4-prev, .carousel4-next {
+.carousel4-prev, .carousel4-next,
+.carousel5-prev, .carousel5-next {
   font-size: 30px;
   padding: 10px 15px;
 }
 
-.carousel1-prev, .carousel2-prev, .carousel3-prev, .carousel4-prev {
+.carousel1-prev, .carousel2-prev, .carousel3-prev, .carousel4-prev, .carousel5-prev {
   left: 10px;
 }
 
-.carousel1-next, .carousel2-next, .carousel3-next, .carousel4-next {
+.carousel1-next, .carousel2-next, .carousel3-next, .carousel4-next, .carousel5-next {
   right: 10px;
 }
 
 .carousel3-prev:hover, .carousel3-next:hover,
-.carousel4-prev:hover, .carousel4-next:hover {
+.carousel4-prev:hover, .carousel4-next:hover,
+.carousel5-prev:hover, .carousel5-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-.carousel5 {
-  position: relative;
-  width: 90%;
-  max-width: 500px;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+ 
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra pra destacar melhor */
+  
+  
+}
+
+.comentario-box {
   margin: 30px auto;
-  overflow: hidden;
-  border: 3px solid #555;
+  max-width: 500px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 2px solid #2e7d32;
   border-radius: 10px;
+  padding: 10px;
+  font-size: 1em;
+  resize: none;
 }
 
-.carousel5-images {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel5-images img {
-  height: 300px;
-  width: auto;
-  margin: auto;
-  display: block;
-  object-fit: cover;
-}
-
-
-.carousel5-prev, .carousel5-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  background-color: rgba(0,0,0,0.5);
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2e7d32;
   color: white;
   border: none;
+  border-radius: 8px;
+  font-size: 1em;
   cursor: pointer;
-  padding: 5px 10px;
-  z-index: 1;
 }
 
-.carousel5-prev { left: 10px; }
-.carousel5-next { right: 10px; }
+button:hover {
+  background-color: #1b5e20;
+}
+
+.comentarios {
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.comentarios .comentario {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
